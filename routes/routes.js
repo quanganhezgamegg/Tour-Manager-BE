@@ -8,6 +8,14 @@ import {
     updateTour,
     deleteTour,
 } from "../controllers/tourController.js";
+// import controller cho hotel
+import {
+    showHotels,
+    showHotelById,
+    createHotel,
+    updateHotel,
+    deleteHotel,
+} from "../controllers/hotelController.js";
 
 // init express router
 const router = express.Router();
@@ -28,6 +36,23 @@ router.put('/api/tours/:id', updateTour);
 
 // delete Tour
 router.delete("/api/tours/:id", deleteTour);
+
+////////////////////////// HOTEL ////////////////////////////////
+
+// get all hotel
+router.get("/api/hotels", showHotels);
+
+// get single hotel
+router.get("/api/hotels/:id", showHotelById);
+
+// create hotel
+router.post("/api/hotels", createHotel);
+
+// update Hotel
+router.put('/api/hotels/:id', updateHotel);
+
+// delete Tour
+router.delete("/api/hotels/:id", deleteHotel);
 
 // export default router
 export default router;

@@ -1,4 +1,4 @@
-import { db } from '../config/database.js'; // Đảm bảo import đúng
+import { db } from '../config/database.js'; 
 
 // Lấy tất cả các tours
 export const getTours = (result) => {
