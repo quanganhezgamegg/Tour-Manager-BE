@@ -1,0 +1,21 @@
+# Thư mục chứa các package cài đặt
+node_modules/
+
+# Tệp cấu hình môi trường
+.env
+
+# Tệp nhật ký
+*.log
+
+# Thư mục bản dựng
+dist/
+build/
+
+# Tệp và thư mục của IDE
+.vscode/
+.idea/
+
+# Các tệp khác không cần thiết
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
